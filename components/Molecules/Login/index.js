@@ -51,7 +51,7 @@ const LoginForm = () => {
                     {showPassword ? <AiFillEyeInvisible className="w-20 cursor-pointer" onClick={() => setShowPassword(!showPassword)}/> : <AiFillEye className="w-20 cursor-pointer" onClick={() => setShowPassword(!showPassword)}/>}
                 </div>
 
-                <button className={`w-3/5 bg-primary font-bold p-4 rounded-xl flex items-center justify-center gap-5 ${disabled ? "cursor-not-allowed bg-[#e9e9e9] text-tertiary" : "cursor-pointer hover:bg-tertiary hover:text-secondary duration-300 focus:ring-[1px] focus:ring-secondary focus:cursor-not-allowed text-tertiary"}`} 
+                <button className={`w-3/5 font-bold p-4 rounded-xl flex items-center justify-center gap-5 ${disabled ? "cursor-not-allowed bg-[#e9e9e9] text-tertiary" : "cursor-pointer bg-primary hover:bg-tertiary hover:text-secondary duration-300 focus:ring-[1px] focus:ring-secondary focus:cursor-not-allowed text-tertiary"}`} 
                 onClick={onSubmit}
                 disabled={disabled}
                 >Login
